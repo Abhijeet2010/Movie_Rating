@@ -1,0 +1,78 @@
+.movie-loading{
+   background-color: black;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.loading> h2{
+   font-size: 4rem;
+   color: White;
+}
+
+.single-movie{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+
+.movie-card{
+   display: flex;
+   align-items: center;
+   background-color: black;
+   border-radius: 10px;
+   width: 40vw;
+   height: 20rem;
+   padding: 2rem;
+   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+figure{
+   height: 14rem;
+}
+
+figure > img{
+   border: 2px solid white;
+   height: 14rem;
+   border-radius: 10px;
+}
+
+.movie-title{
+   margin-bottom: 1rem;
+}
+.movie-title>h2{
+   color: white;
+   font-weight: bold;
+   font-family: cursive;
+   font-size: 1.5rem;
+   line-height: 2rem;
+}
+
+#last{
+   margin-bottom: 1rem;
+}
+
+.movie-text{
+   padding-left: 2rem ;
+}
+
+.card-info-text{
+   line-height: 2rem ;
+   font-size: 1rem;
+   font-weight: bold;
+   color: gold;
+}
+.btn{
+   padding: 10px;
+   border: 1px solid white;
+   border-radius: 10px;
+   font-size: bold;
+}
+
+.btn:hover{
+   background-color: white;
+   color: black;
+   font-size: bold;
+}

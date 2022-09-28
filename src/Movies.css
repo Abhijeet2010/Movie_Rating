@@ -7,6 +7,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
+    height: 100vh;
+    padding-bottom: 4rem;
 }
 
 .card{
@@ -34,7 +36,7 @@
 }
 
 .card-info > img{
-    border: 1px solid black;
+    border: 1px solid white;
     margin-top: 1rem;
     height: 14rem;
     width:10rem ;

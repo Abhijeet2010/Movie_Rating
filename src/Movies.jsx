@@ -6,7 +6,6 @@ import "./Movies.css";
 
 const Movies = () => {
   const { movie } = useContext(AppContext);
-  const num = 15;
 
   return (
     <div className="grid grid-4-col">

@@ -2,12 +2,9 @@ import React, { useEffect, useState } from "react";
  
 
 const AppContext = React.createContext();
-const AppUrl = `https://www.omdbapi.com/`;
+export const AppUrl = `https://www.omdbapi.com/`;
 
 const AppProvider = ({ children }) => {
-
-
-
 
   const [isLoading, setIsLoading] = useState(true);
   const [movie, setMovie] = useState([]);
@@ -15,6 +12,7 @@ const AppProvider = ({ children }) => {
   const [query, setQuery] = useState("Harry")
 
   const getMovies = async (url) => {
+    setError("");
     try {
       const res = await fetch(url);
       const data = await res.json();
