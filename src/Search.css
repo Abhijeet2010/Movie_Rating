@@ -8,7 +8,7 @@
     margin-top: 2rem;
 }
 .search__input{
-    margin-top: 3rem;
+    margin-top: 1rem;
     width: 20rem;
     height: 2rem;
     border-radius: 999px;
@@ -16,4 +16,36 @@
     outline: none;
     padding: 20px 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-error{
+    margin-top: 1.5rem;
+}
+.card-error >p{
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(220, 4, 4);
+}
+
+/* media */
+
+
+@media (max-width:480px){
+    .search__input {
+        margin-left: 5px;
+        margin-top: 20px;
+        width: 15rem;
+    }
+
+    .search > h2{
+        font-weight: bold;
+        font-size: 20px;       
+        margin-left: 10px;
+    }
+    
+
+    .card-error >p{
+        font-size: 1rem;
+    }
+
 }

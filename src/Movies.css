@@ -1,55 +1,63 @@
-
-.grid-4-col{
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 15rem);
-    gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    height: 100vh;
-    padding-bottom: 4rem;
+.grid-4-col {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15rem);
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  height: fit-content;
+  padding-bottom: 4rem;
 }
 
-.card{
-    color:black;
-    text-align: center;
-    height:20rem ;
-    width: 15rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+.card {
+  color: black;
+  text-align: center;
+  height: 20rem;
+  width: 15rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.card :hover{
-    background-color: rgba(0, 0, 0, 0.2) ;
-    border-radius: 10px;
-}
-
-.card-info{
-    height: 100%;
+.card :hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
-.card-info > h2{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-decoration: none;
-    font-size: large;
+.card-info > h2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  font-size: large;
 }
 
-.card-info > img{
-    border: 1px solid white;
-    margin-top: 1rem;
-    height: 14rem;
-    width:10rem ;
-    transition: all ease-out 400ms;
+.card-info > img {
+  border: 1px solid white;
+  margin-top: 1rem;
+  height: 14rem;
+  width: 10rem;
+  transition: all ease-out 400ms;
 }
 
-.card-info > img:hover{
-transform: scale(1.15);
+.card-info > img:hover {
+  transform: scale(1.15);
 }
 
 a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
 }
-   
+
+/* Media */
+
+@media (max-width: 480) {
+  .grid-4-col {
+    margin-top: 1rem;
+    height: 100vh;
+    padding-bottom: 4rem;
+  }
+  .card {
+    width: 15rem;
+    border-radius: 10px;
+  }
+}

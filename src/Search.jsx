@@ -3,7 +3,7 @@ import { AppContext } from './context'
 import "./Search.css"
 
 const Search = () => {
-  const {query, setQuery} = useContext(AppContext)
+  const {query, setQuery, Error} = useContext(AppContext)
   return (
     <div className='search'>
       <h2>Search Your Favourite Movie Here</h2> 
@@ -15,6 +15,10 @@ const Search = () => {
             />    
           </div>
         </form>
+
+        <div className='card-error'>
+        <p>{Error.show && Error.msg}</p>
+        </div>
     </div>
   )
 }

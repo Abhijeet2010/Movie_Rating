@@ -24,7 +24,7 @@ const MovieDetails = () => {
   useEffect(() => {
     let setTime = setTimeout(() => {
       getMovies(`${AppUrl}?i=${id}&apikey=4598e5a0`);
-    }, 700);
+    }, 800);
     return () => clearTimeout(setTime);
   }, [id]);
 

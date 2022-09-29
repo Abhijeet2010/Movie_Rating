@@ -23,7 +23,7 @@ const AppProvider = ({ children }) => {
       } else {
         setError({
           show: true,
-          msg: data.error,
+          msg: data.Error,
         });
       }
     } catch (error) {
